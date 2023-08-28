@@ -10,7 +10,7 @@ int len;
 va_list ap;
 if (format == NULL)
 return (-1);
-len = strlen(format);
+len = _strlen(format);
 if (len <= 0)
 return (0);
 va_start(ap, format);

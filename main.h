@@ -3,11 +3,13 @@
 
 #include <stdlib.h>
 #include <stdarg.h>
-#include <string.h>
+#include <unistd.h>
 
 int _printf(const char *format, ...);
 int _putchar(char c);
+int _strlen(const char *);
 int print(char *);
+int buffer(char);
 char *itoa(long int, int);
 int handler(const char *, va_list);
 int percent_handler(const char *, va_list, int *);
